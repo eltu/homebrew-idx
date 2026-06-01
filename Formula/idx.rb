@@ -11,7 +11,7 @@ class Idx < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/eltu/idx/releases/download/v0.7.0/idx-0.7.0-darwin-amd64.tar.gz"
-      sha256 "04e378ae5665db5b22c990d34ce9beadb370b4e26689cff6c7f45d9aa01b450d"
+      sha256 "9e26e42dfa46af788a76378509338c3eb39d0cbc184cf43159ad32b1cf780229"
 
       define_method(:install) do
         bin.install "idx"
@@ -19,7 +19,7 @@ class Idx < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/eltu/idx/releases/download/v0.7.0/idx-0.7.0-darwin-arm64.tar.gz"
-      sha256 "af6101fde3e09e00101ec8d6b8ec58b5cb2dece65f58c341f92dd772bcfcb4c7"
+      sha256 "5c75b5a53fd9ed87cf8e0c0bf5b1adeafb1cdb7e67dac06388caca2570e23a36"
 
       define_method(:install) do
         bin.install "idx"
@@ -30,14 +30,14 @@ class Idx < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/eltu/idx/releases/download/v0.7.0/idx-0.7.0-linux-amd64.tar.gz"
-      sha256 "40b1cad4a4be9783bd268828d712408d00c8e9131581d3cae9f418e9281c559a"
+      sha256 "6ceb96cce72d4e9e512749418e34a7137af761661c645dcd5602121b7bf03463"
       define_method(:install) do
         bin.install "idx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/eltu/idx/releases/download/v0.7.0/idx-0.7.0-linux-arm64.tar.gz"
-      sha256 "ad3a5f360c67b87e952ee2e36d3bf7b27483b7feb3b53b9c55bfff064a229237"
+      sha256 "ea06532958146de978760ef79c64b7941d8b90c96124874e54806069065472b5"
       define_method(:install) do
         bin.install "idx"
       end
