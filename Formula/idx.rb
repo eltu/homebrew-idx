@@ -5,21 +5,21 @@
 class Idx < Formula
   desc "Fast local file indexer and search tool"
   homepage "https://github.com/eltu/idx"
-  version "0.7.0"
+  version "0.8.0"
   license "BSD-3-Clause"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/eltu/idx/releases/download/v0.7.0/idx-0.7.0-darwin-amd64.tar.gz"
-      sha256 "6097e72796e8c5ae2435d11136626f3b623c99fa9054efe5d3bcb7e031e78bb5"
+      url "https://github.com/eltu/idx/releases/download/v0.8.0/idx-0.8.0-darwin-amd64.tar.gz"
+      sha256 "f20f9f07cf855608d2f460bfa1f74316306096493c53e328731b309098de2f93"
 
       define_method(:install) do
         bin.install "idx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/eltu/idx/releases/download/v0.7.0/idx-0.7.0-darwin-arm64.tar.gz"
-      sha256 "01aeb1c6a01cfc71f670fcb5db400b719dfd9a5143c6933633ddc4eec01d5140"
+      url "https://github.com/eltu/idx/releases/download/v0.8.0/idx-0.8.0-darwin-arm64.tar.gz"
+      sha256 "894c8e3be35ef6ee207a37a5e12faa92e0d4d0d019cd18e56b9e0c2d30645622"
 
       define_method(:install) do
         bin.install "idx"
@@ -29,15 +29,15 @@ class Idx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eltu/idx/releases/download/v0.7.0/idx-0.7.0-linux-amd64.tar.gz"
-      sha256 "97d390c9b240e588cf07408ec7fb2dd048ee2d6855c3a9b21db02702bdd90619"
+      url "https://github.com/eltu/idx/releases/download/v0.8.0/idx-0.8.0-linux-amd64.tar.gz"
+      sha256 "2ab9291178dbb88f7c9e29e4f2c8a9231c7aac1fc9c5bd9a8865292bb9cace58"
       define_method(:install) do
         bin.install "idx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eltu/idx/releases/download/v0.7.0/idx-0.7.0-linux-arm64.tar.gz"
-      sha256 "c78e85d7e1cb99f65fee8869e02176931c6a80e6d3d18b12f8bb2c99657ec54a"
+      url "https://github.com/eltu/idx/releases/download/v0.8.0/idx-0.8.0-linux-arm64.tar.gz"
+      sha256 "56ceca1a7182250be48ebaa0329592550502c080e5b6480177d51cb8bb049956"
       define_method(:install) do
         bin.install "idx"
       end
